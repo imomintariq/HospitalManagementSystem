@@ -2,8 +2,11 @@
   <library name="JPA 1.0-JPA 1.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/javaee.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../javafx-sdk-17.0.1/lib" />
+      <root url="jar://$PROJECT_DIR$/../../../../jdk-11.0.13/lib/jrt-fs.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../javafx-sdk-17.0.1/lib" recursive="false" />
   </library>
 </component>

@@ -14,9 +14,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
         stg = stage;
-        String fxmlPath = "WelcomeScreen/WelcomeScreen.fxml";
+        String fxmlPath = "ScreenFXMLs/LoginScreen.fxml";
         URL url = getClass().getClassLoader().getResource(fxmlPath);
         FXMLLoader fxmlLoader = new FXMLLoader(url);
         Scene scene = new Scene(fxmlLoader.load(), 630, 450);
