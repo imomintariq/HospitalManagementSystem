@@ -60,7 +60,7 @@ public class DashboardDoctor {
     void ViewProfile(MouseEvent event) {
         Main main = new Main();
         try {
-            main.changeScene("ScreenFXMLs/Doctor/viewProfile.fxml");
+            main.changeScene("ScreenFXMLs/Doctor/ViewProfile.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
@@ -68,6 +68,13 @@ public class DashboardDoctor {
     }
 
     public void BackToDashboard(MouseEvent mouseEvent) {
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Doctor/DashboardDoctor.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
     public void SignInButtonClicked(MouseEvent mouseEvent) {

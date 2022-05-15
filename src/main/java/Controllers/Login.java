@@ -17,6 +17,9 @@ public class Login {
     private PasswordField password;
 
     @FXML
+    private Button signupBtn;
+
+    @FXML
     private Button signInButton;
 
     @FXML
@@ -27,6 +30,17 @@ public class Login {
         Main main = new Main();
         try {
             main.changeScene("ScreenFXMLs/Doctor/DashboardDoctor.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
+    }
+
+    @FXML
+    void SignUpButtonClicked(MouseEvent event) {
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/SignupScreen.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");

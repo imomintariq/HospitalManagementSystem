@@ -63,7 +63,7 @@ public class Patients {
     void ViewProfile(MouseEvent event) {
         Main main = new Main();
         try {
-            main.changeScene("ScreenFXMLs/viewProfile.fxml");
+            main.changeScene("ScreenFXMLs/ViewProfile.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
