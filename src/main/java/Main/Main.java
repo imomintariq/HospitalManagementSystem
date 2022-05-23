@@ -16,6 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         stg = stage;
         String fxmlPath = "ScreenFXMLs/LoginScreen.fxml";
+        //String fxmlPath = "ScreenFXMLs/Patient/ViewProfile.fxml";
         URL url = getClass().getClassLoader().getResource(fxmlPath);
         FXMLLoader fxmlLoader = new FXMLLoader(url);
         Scene scene = new Scene(fxmlLoader.load(), 630, 450);

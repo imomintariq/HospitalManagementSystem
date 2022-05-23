@@ -38,17 +38,6 @@ public class ViewPatientProfile {
     }
 
     @FXML
-    void BookAppointment(MouseEvent event) {
-        Main main = new Main();
-        try {
-            main.changeScene("ScreenFXMLs/Patient/BookAppointments.fxml");
-        }
-        catch(Exception e) {
-            System.out.println("Page not Loaded");
-        }
-    }
-
-    @FXML
     void ViewProfile(MouseEvent event) {
         Main main = new Main();
         try {
@@ -81,4 +70,13 @@ public class ViewPatientProfile {
         }
     }
 
+    public void Booking(MouseEvent mouseEvent) {
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/BookAppointments.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
+    }
 }

@@ -79,4 +79,13 @@ public class DashboardDoctor {
 
     public void SignInButtonClicked(MouseEvent mouseEvent) {
     }
+
+    public void Booking(MouseEvent mouseEvent) {
+    }
+
+    public void findDoctor(MouseEvent mouseEvent) {
+    }
+
+    public void viewVisitingHistory(MouseEvent mouseEvent) {
+    }
 }

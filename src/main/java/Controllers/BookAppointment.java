@@ -1,5 +1,6 @@
 package Controllers;
 
+import Main.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -31,12 +32,24 @@ public class BookAppointment {
 
     @FXML
     void BackToLogin(MouseEvent event) {
-
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/LoginScreen.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
     @FXML
     void Booking(MouseEvent event) {
-
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/BookAppointment.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
     @FXML
@@ -46,17 +59,35 @@ public class BookAppointment {
 
     @FXML
     void ViewProfile(MouseEvent event) {
-
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/ViewProfile.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
     @FXML
     void findDoctor(MouseEvent event) {
-
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/FindDoctor.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
     @FXML
     void viewVisitingHistory(MouseEvent event) {
-
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/ViewPrescriptions.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
     }
 
 }
