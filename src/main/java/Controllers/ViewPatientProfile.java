@@ -88,7 +88,7 @@ public class ViewPatientProfile implements Initializable {
 
         Main main = new Main();
         try {
-            main.changeScene("ScreenFXMLs/Patient/BookAppointments.fxml");
+            main.changeScene("ScreenFXMLs/Patient/BookAppointment.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
