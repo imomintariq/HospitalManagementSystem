@@ -1,24 +1,39 @@
 package Controllers;
 
 import Main.Main;
+import Utilities.SignedInUser;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class DashboardDoctor {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class DashboardDoctor implements Initializable {
 
     @FXML
-    private ImageView Appointment;
+    private ImageView Appointments1;
+
+    @FXML
+    private ImageView Dashboard1;
 
     @FXML
     private ImageView LogOut;
 
     @FXML
-    private ImageView Patients;
+    private ImageView MyPatients1;
 
     @FXML
-    private ImageView Profile;
+    private ImageView Profile1;
+
+    @FXML
+    private ListView<String> alerts_list;
+
+    @FXML
+    private Label doctors_name;
 
     @FXML
     private Label signedInUserLabel;
@@ -77,15 +92,10 @@ public class DashboardDoctor {
         }
     }
 
-    public void SignInButtonClicked(MouseEvent mouseEvent) {
-    }
-
-    public void Booking(MouseEvent mouseEvent) {
-    }
-
-    public void findDoctor(MouseEvent mouseEvent) {
-    }
-
-    public void viewVisitingHistory(MouseEvent mouseEvent) {
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        SignedInUser signedInUser = SignedInUser.getInstance();
+        doctors_name.setText(signedInUser.getUser().getFirstName() + " "+signedInUser.getUser().getLastName());
+        doctors_name.setVisible(true);
     }
 }

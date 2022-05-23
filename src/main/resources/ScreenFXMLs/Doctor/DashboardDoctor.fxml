@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashboardDoctor">
+<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashboardDoctor">
    <children>
       <Pane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #00000;">
          <children>
@@ -32,12 +32,12 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Label layoutX="241.0" layoutY="81.0" text="Doctor's Name" textFill="#30424e">
+            <Label fx:id="doctors_name" layoutX="259.0" layoutY="80.0" text="Doctor's Name" textFill="#30424e">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Text fill="#30424e" layoutX="127.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Dr. ">
+            <Text fill="#30424e" layoutX="132.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Dr. ">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -48,13 +48,12 @@
                   <Image url="@../../images/istockphoto-1214423422-612x612.jpg" />
                </image>
             </ImageView>
-            <ListView layoutX="128.0" layoutY="163.0" prefHeight="200.0" prefWidth="449.0" />
+            <ListView fx:id="alerts_list" layoutX="128.0" layoutY="163.0" prefHeight="200.0" prefWidth="449.0" />
             <Text fill="RED" layoutX="132.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alerts">
                <font>
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </Text>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="190.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="Dashboard1" accessibleRole="BUTTON" fitHeight="51.0" fitWidth="55.0" layoutX="24.0" layoutY="82.0" onMouseClicked="#BackToDashboard" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/shelter-icon.png" />

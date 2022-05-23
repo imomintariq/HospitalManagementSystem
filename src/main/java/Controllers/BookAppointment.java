@@ -55,7 +55,6 @@ public class BookAppointment implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         selectedDoctor = new ArrayList<>();
-        appointment_date = new DatePicker();
         loadDoctors();
     }
 

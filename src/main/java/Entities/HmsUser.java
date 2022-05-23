@@ -235,4 +235,25 @@ public class HmsUser {
         }
         return soctors_list_string;
     }
+
+    public ArrayList<String> retrievePatients() {
+        Configuration con = new Configuration();
+        con.configure().addAnnotatedClass(HmsUser.class);
+
+        SessionFactory sf= con.buildSessionFactory();
+        Session session= sf.openSession();
+        Transaction trans= session.beginTransaction();
+        List<HmsUser> memberList = session.createQuery("FROM HmsUser").getResultList();
+        ArrayList<String> soctors_list_string = new ArrayList<>();
+
+        for(int i=0;i<memberList.size();i++)
+        {
+            if(memberList.get(i).getIsDoctor() == false){
+                soctors_list_string.add(memberList.get(i).firstName+" "+memberList.get(i).lastName);
+            }
+
+
+        }
+        return soctors_list_string;
+    }
 }

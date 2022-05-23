@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Appointments">
+<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Appointments">
    <children>
       <Pane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #00000;">
          <children>
@@ -58,7 +58,7 @@
                   <Image url="@../../images/istockphoto-1214423422-612x612.jpg" />
                </image>
             </ImageView>
-            <ListView layoutX="128.0" layoutY="109.0" prefHeight="137.0" prefWidth="449.0" />
+            <ListView fx:id="todays_appointments" layoutX="128.0" layoutY="109.0" prefHeight="137.0" prefWidth="449.0" />
             <ImageView fx:id="MyPatients" accessibleRole="BUTTON" fitHeight="82.0" fitWidth="51.0" layoutX="24.0" layoutY="316.0" onMouseClicked="#ViewPatients" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/706153.png" />
@@ -69,7 +69,7 @@
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </Text>
-            <ListView layoutX="128.0" layoutY="288.0" prefHeight="137.0" prefWidth="449.0" />
+            <ListView fx:id="all_appointments" layoutX="128.0" layoutY="288.0" prefHeight="137.0" prefWidth="449.0" />
             <Line endX="616.0" endY="1.0" layoutX="14.0" layoutY="58.0" startX="-14.0" strokeWidth="1.25" />
             <Line endX="-13.8839111328125" endY="-1.0" layoutX="113.0" layoutY="1.0" startX="-15.0" startY="449.0" strokeWidth="1.25" />
             <Text layoutX="20.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
