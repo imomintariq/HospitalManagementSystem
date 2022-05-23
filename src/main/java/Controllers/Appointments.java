@@ -63,7 +63,7 @@ public class Appointments {
     void ViewProfile(MouseEvent event) {
         Main main = new Main();
         try {
-            main.changeScene("ScreenFXMLs/ViewProfile.fxml");
+            main.changeScene("ScreenFXMLs/Doctor/ViewProfile.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
@@ -73,7 +73,7 @@ public class Appointments {
     public void ViewAppointments(MouseEvent mouseEvent) {
         Main main = new Main();
         try {
-            main.changeScene("ScreenFXMLs/ViewAppointments.fxml");
+            main.changeScene("ScreenFXMLs/Doctor/ViewAppointments.fxml");
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
