@@ -1,11 +1,10 @@
 package Controllers;
 
+import Entities.HmsAppointment;
 import Entities.HmsUser;
 import Main.Main;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -14,7 +13,6 @@ import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.StringTokenizer;
@@ -139,6 +137,11 @@ public class BookAppointment implements Initializable {
     }
 
     public void appointmentButtonClicked(MouseEvent mouseEvent) {
+        String _doctors_name = selectedDoctor.get(0);
+        String _patients_name = patients_name.getText();
+        LocalDate _appointment_date = appointment_date.getValue();
+        HmsAppointment hmsAppointment =  new HmsAppointment();
+        hmsAppointment.setAppointment(_doctors_name,_patients_name, _appointment_date);
 
     }
 }

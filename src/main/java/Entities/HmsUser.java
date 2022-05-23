@@ -88,6 +88,27 @@ public class HmsUser {
     }
 
 
+    public static HmsUser retrieveUser(String username) {
+        Configuration con = new Configuration();
+        con.configure().addAnnotatedClass(HmsUser.class);
+
+        SessionFactory sf= con.buildSessionFactory();
+        Session session= sf.openSession();
+        Transaction trans= session.beginTransaction();
+        List<HmsUser> UserList = session.createQuery("FROM HmsUser ").getResultList();
+
+        for(int i=0;i<UserList.size();i++)
+        {
+            System.out.println(UserList.get(i).getId());
+            System.out.println(UserList.get(i).getPassword());
+            if(username.equals(UserList.get(i).getId()))
+            {
+                return UserList.get(i);
+            }
+        }
+        return null;
+    }
+
     public static HmsUser updateSignedInUser(String first_name, String last_name, String email_address, String password) {
         SignedInUser signedInUser = SignedInUser.getInstance();
         Configuration con = new Configuration();
