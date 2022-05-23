@@ -13,12 +13,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Login">
+<AnchorPane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FAF9F6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Login">
     <children>
         <Pane prefHeight="450.0" prefWidth="630.0" style="-fx-background-color: #FFFFFF;">
             <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3fa8be" height="450.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="273.0" />
-                <Button fx:id="signInButton" layoutX="106.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#SignInButtonClicked" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #30424e;" text="Sign In" textFill="WHITE">
+                <Button fx:id="signInButton" layoutX="106.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#SignInButtonClicked" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #30424e;" text="Sign In" textFill="WHITE">
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </padding>
@@ -26,8 +26,8 @@
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-                <TextField fx:id="username" layoutX="62.0" layoutY="252.0" prefHeight="34.0" prefWidth="150.0" promptText="Username" />
-                <PasswordField fx:id="password" layoutX="63.0" layoutY="305.0" prefHeight="34.0" prefWidth="149.0" promptText="Password" />
+                <TextField fx:id="username" layoutX="62.0" layoutY="252.0" prefHeight="34.0" prefWidth="150.0" promptText="username" />
+                <PasswordField fx:id="password" layoutX="63.0" layoutY="305.0" prefHeight="34.0" prefWidth="149.0" promptText="password" />
                 <Text fill="#30424e" layoutX="104.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
                     <font>
                         <Font name="Arial Bold" size="20.0" />
