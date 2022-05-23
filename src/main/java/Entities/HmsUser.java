@@ -1,5 +1,6 @@
 package Entities;
 
+import Utilities.SignedInUser;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -85,7 +86,22 @@ public class HmsUser {
         return null;
     }
 
-    public static void updateSignedInUser() {
+
+    public static HmsUser updateSignedInUser(String first_name, String last_name, String email_address, String password) {
+        SignedInUser signedInUser = SignedInUser.getInstance();
+        Configuration con = new Configuration();
+        con.configure().addAnnotatedClass(HmsUser.class);
+
+        SessionFactory sf= con.buildSessionFactory();
+        Session session= sf.openSession();
+        Transaction trans= session.beginTransaction();
+        HmsUser hmsUser = session.get(HmsUser.class,signedInUser.getUser().getId());
+        hmsUser.setFirstName(first_name);
+        hmsUser.setLastName(last_name);
+        hmsUser.setEmailAddress(email_address);
+        hmsUser.setPassword(password);
+        session.update(hmsUser);
+        return hmsUser;
     }
 
     public String getId() {

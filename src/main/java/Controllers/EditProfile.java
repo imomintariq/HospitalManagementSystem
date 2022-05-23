@@ -91,7 +91,22 @@ public class EditProfile {
 
     @FXML
     void onClickSave(MouseEvent event) {
-        HmsUser.updateSignedInUser();
+        String _first_name = first_name.getText();
+        String _last_name = last_name.getText();
+        String _email_address = email_address.getText();
+        String _password = password.getText();
+        HmsUser hmsUser = HmsUser.updateSignedInUser(_first_name, _last_name, _email_address, _password);
+        SignedInUser signedInUser = SignedInUser.getInstance();
+        signedInUser.setUser(hmsUser);
+
+        Main main = new Main();
+        try {
+            main.changeScene("ScreenFXMLs/Patient/ViewProfile.fxml");
+        }
+        catch(Exception e) {
+            System.out.println("Page not Loaded");
+        }
+
     }
 
     @FXML
