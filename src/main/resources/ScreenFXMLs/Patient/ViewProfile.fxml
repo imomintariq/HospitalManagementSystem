@@ -104,6 +104,21 @@
                   <Image url="@../../images/402-4025970_transparent-edit-icon-png-icon-edit-svg-png.png" />
                </image>
             </ImageView>
+            <Label layoutX="449.0" layoutY="215.0" prefHeight="21.0" prefWidth="147.0" text="Name">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="449.0" layoutY="243.0" prefHeight="21.0" prefWidth="125.0" text="Password">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="330.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <Text fill="#30424e" layoutX="330.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Details">
@@ -111,26 +126,11 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Text>
-      <Text layoutX="330.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+      <Text layoutX="330.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Text>
-      <Label layoutX="450.0" layoutY="212.0" prefHeight="21.0" prefWidth="147.0" text="Name">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Label>
-      <Text layoutX="330.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Text>
-      <Label layoutX="450.0" layoutY="237.0" prefHeight="21.0" prefWidth="125.0" text="Password">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Label>
       <Text layoutX="330.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
          <font>
             <Font name="Arial" size="14.0" />
