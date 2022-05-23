@@ -1,15 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url"/>
-    <property name="connection.driver_class"/>
-    <!-- <property name="connection.username"/> -->
-    <!-- <property name="connection.password"/> -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/testdb</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">tiger</property>
 
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    <property name="show_sql">true</property>
+<!--    <mapping class="Entities.User"/>-->
+<!--    <mapping class="Entities.Kameti"/>-->
+<!--    <mapping class="Entities.Member"/>-->
+
+
   </session-factory>
 </hibernate-configuration>

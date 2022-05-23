@@ -43,12 +43,12 @@
                   <Image url="@../../images/png-clipart-medicine-health-care-medical-sign-hospital-health-hand-logo.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="Dashboard1" accessibleRole="BUTTON" fitHeight="51.0" fitWidth="55.0" layoutX="24.0" layoutY="155.0" onMouseClicked="#BackToDashboard" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BookBtn" accessibleRole="BUTTON" fitHeight="51.0" fitWidth="55.0" layoutX="24.0" layoutY="155.0" onMouseClicked="#Booking" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/calendar-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="Profile1" accessibleRole="BUTTON" fitHeight="91.0" fitWidth="51.0" layoutX="25.0" layoutY="79.0" onMouseClicked="#ViewProfile" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="profileBtn" accessibleRole="BUTTON" fitHeight="91.0" fitWidth="51.0" layoutX="25.0" layoutY="79.0" onMouseClicked="#ViewProfile" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/profile-icon-9.png" />
                </image>
@@ -75,12 +75,12 @@
             </Text>
             <Line endX="616.0" layoutX="14.0" layoutY="59.0" startX="-14.0" strokeWidth="1.25" />
             <Line endX="73.375" endY="381.0000305175781" layoutX="24.0" layoutY="69.0" startX="73.375" startY="-69.0" strokeWidth="1.25" />
-            <ImageView fitHeight="59.0" fitWidth="51.0" layoutX="24.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="findDocBtn" fitHeight="59.0" fitWidth="51.0" layoutX="24.0" layoutY="315.0" onMouseClicked="#findDoctor" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/1869354.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="59.0" fitWidth="51.0" layoutX="23.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="historyBtn" fitHeight="59.0" fitWidth="51.0" layoutX="23.0" layoutY="234.0" onMouseClicked="#viewVisitingHistory" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/1028452.png" />
                </image>

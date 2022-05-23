@@ -30,6 +30,7 @@ public class Login {
         Main main = new Main();
         try {
             main.changeScene("ScreenFXMLs/Doctor/DashboardDoctor.fxml");
+            //ScreenFXMLs/Patient/ViewProfile.fxml
         }
         catch(Exception e) {
             System.out.println("Page not Loaded");
